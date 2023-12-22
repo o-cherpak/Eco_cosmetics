@@ -1,7 +1,79 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+@import "header";
+@import "normaliza";
+@import "menu";
+@import "brand-of";
+@import "gifts-of-nature";
+@import "about-brand";
+@import "shop";
+@import "products";
+@import "about-the-creators";
+@import "tooth-powder";
+@import "contact-us";
+@import "footer";
 
-body {
-  background: $c-gray;
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir/Avenir.ttc") format("ttc"),
+    url("../fonts/Avenir/Avenir_Book.ttf") format("ttf"),
+    url("../fonts/Avenir/Avenir_Heavy.ttf") format("ttf");
+}
+
+.section__title {
+  color: #344f10;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.learn-more {
+  display: flex;
+  position: relative;
+  grid-column: 1/-2;
+  width: 94px;
+  color: #344f10;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 35px;
+
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 27px;
+      width: 90px;
+      height: 1px;
+      background: #344f10;
+    }
+  }
+
+}
+
+.page {
+  &__body {
+    font-family: Avenir, sans-serif;
+    background: $background-color--bodily;
+  }
+
+  &__menu {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 }
