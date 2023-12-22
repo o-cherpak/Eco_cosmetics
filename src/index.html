@@ -1,13 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Eco cosmetics</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="header">
+      <nav class="header__nav">
+        <li class="nav__item">
+          <a href="#menu" class="nav__icon">
+            <img src="./images/icons/menu.svg" alt="menu">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__icon">
+            <img src="./images/icons/logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__icon">
+            <img src="./images/icons/shop.svg" alt="shop">
+          </a>
+        </li>
+      </nav>
+
+      <div class="header__background"></div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="menu__top">
+        <a href="#" class="top__link">
+          <img
+            src="./images/icons/close.svg"
+            alt="close menu"
+            class="top__icon-close"
+          >
+        </a>
+      </div>
+
+      <div class="menu__bottom">
+        <a href="#" class="menu__link">
+          <h1 class="menu__title">Shop</h1>
+        </a>
+
+        <a href="#" class="menu__link">
+          <h1 class="menu__title">Contact</h1>
+        </a>
+
+        <a href="#" class="menu__link">
+          <h1 class="menu__title">About</h1>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="brand-of">
+        <h1 class="brand-of__title">Brand of eco- <br>cosmetics and magic candles</h1>
+
+        <p class="brand-of__description">20% of sales at a wild bird shelter</p>
+
+        <a href="#" class="brand-of__button">Shop</a>
+      </section>
+
+      <section class="gifts-of-nature">
+        <h2 class="gifts-of-nature__title">
+          if you choose the gifts of nature and care about<br>  it’s - scroll down
+        </h2>
+      </section>
+
+      <section class="about-brand">
+        <h1 class="about-brand__title section__title">about our brand</h1>
+
+        <p class="about-brand__description">Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or reused.</p>
+
+        <a href="#" class="about-brand__learn-more learn-more">LEARN MORE</a>
+      </section>
+
+      <section class="shop">
+        <h1 class="shop__title section__title">shop</h1>
+
+        <ul class="shop__nav">
+          <li class="shop__item">
+            <a href="#" class="shop__link">face</a>
+          </li>
+          <li class="shop__item">
+            <a href="#" class="shop__link">body</a>
+          </li>
+          <li class="shop__item">
+            <a href="#" class="shop__link">hair</a>
+          </li>
+          <li class="shop__item">
+            <a href="#" class="shop__link">candles</a>
+          </li>
+        </ul>
+
+        <div class="shop__product product">
+
+          <div class="product__background-product"></div>
+
+          <div class="product__description">
+            <h2 class="product__title">Hydrophilic oil</h2>
+
+            <p class="product__price">160 UAH</p>
+
+          </div>
+
+          <a href="#" class="shop__button">all products</a>
+
+        </div>
+      </section>
+
+      <section class="about-the-creators">
+        <h1 class="about-the-creators__title section__title">about the creators</h1>
+
+        <p class="about-the-creators__description about-the-creators__first-description">My name is Victoria, I’m a master at candle making and natural cosmetics. In the past, a cynologist, was engaged in herbs, made layouts on the Tarot.</p>
+
+        <p class="about-the-creators__description about-the-creators__second-description">I am also a volunteer to save wild birds in distress, a consultant to the Phoenix Wildlife Rehabilitation Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife International.</p>
+
+        <a href="#" class="about-the-creators__learn-more learn-more">LEARN MORE</a>
+
+        <a href="#" class="about-the-creators__button">to contact us</a>
+      </section>
+
+      <section class="tooth-powder">
+        <h1 class="tooth-powder__title section__title">Ayurvedic Tooth Powder</h1>
+
+        <div class="tooth-powder__description">
+          <ul class="description__list">
+            <li class="description__list-item">Kaolin</li>
+            <li class="description__list-item">Sivak</li>
+            <li class="description__list-item">Calcium</li>
+            <li class="description__list-item">Licorice root</li>
+            <li class="description__list-item">Turmeric</li>
+          </ul>
+
+          <div class="tooth-powder__image"></div>
+
+        </div>
+
+        <a href="#" class="tooth-powder__learn-more learn-more">LEARN MORE</a>
+
+        <div class="tooth-powder__icons">
+          <img
+            src="./images/icons/icon-leavs.svg"
+            alt="icon-leavs"
+            class="icons__image"
+            >
+          <p class="icons__description">No synthetics and microplastics</p>
+
+          <img
+            src="./images/icons/icon-animal.svg"
+            alt="icon-animal"
+            class="icons__image"
+            >
+          <p class="icons__description">product packaging can be recycled or reused</p>
+
+          <img
+            src="./images/icons/icon-recycle.svg"
+            alt="icon-recycle"
+            class="icons__image"
+            >
+          <p class="icons__description">only natural ingredients</p>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <h1 class="contact-us__title  section__title">contact us</h1>
+
+        <p class="contact-us__description">We will help you choose a product that suits you and answer your other questions</p>
+
+        <form action="#" class="contact-us__form">
+          <input
+            type="text"
+            class="form__input form__name"
+            placeholder="Your Name"
+          >
+
+          <input
+            type="email"
+            class="form__input form__email"
+            placeholder="E-Mail"
+          >
+
+          <input
+            type="tel"
+            class="form__input form__number"
+            placeholder="Phone Number"
+          >
+
+          <textarea
+            name="Your message"
+            id="message"
+            cols="1"
+            rows="1"
+            placeholder="Your Message"
+            class="form__texarea"
+          >
+          </textarea>
+
+          <input
+            type="submit"
+            value="submit"
+            class="form__submit"
+          >
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="list__item">Shop</li>
+        <li class="list__item">Contact</li>
+        <li class="list__item">About</li>
+      </ul>
+
+      <div class="footer__icons">
+        <img
+          src="./images/icons/icon-facebook-white.svg"
+          alt="icon-facebook"
+          class="footer__icon"
+          >
+        <img
+          src="./images/icons/icon-instagram--white.svg"
+          alt="icon-instagram"
+          class="footer__icon"
+          >
+      </div>
+
+      <p class="footer__description">Ukraine</p>
+
+      <p class="footer__description">support.mountain@gmail.com</p>
+
+      <p class="footer__description">+380934476839</p>
+
+      <p class="footer__description">Support is available Monday - Friday 9am-6pm</p>
+
+      <p class="footer__end">&#169; 2019 witch of mountain <br>winds</p>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

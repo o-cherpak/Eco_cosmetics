@@ -1,0 +1,88 @@
+.contact-us {
+  --columns: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  padding: 0 20px 100px;
+
+  &__title {
+    grid-column: 1/-1;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    grid-column: 1/-1;
+    color: $gray-1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 30px;
+  }
+
+  &__form {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form {
+  background-color: $background-color--bodily;
+
+  &__input {
+    color: #344f10;
+    border:none;
+    border-bottom: 1px solid $gray-4;
+    background-color: $background-color--bodily;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+    &::placeholder {
+      color: $gray-3;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      text-transform: capitalize;
+    }
+  }
+
+  &__texarea {
+    display: flex;
+    resize: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-top: 20px;
+    background-color: $background-color--bodily;
+    border:none;
+    border-bottom: 1px solid $gray-4;
+
+    &::placeholder {
+      color: $gray-3;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      text-transform: capitalize;
+    }
+  }
+
+  &__submit {
+    border: none;
+    color: $gray-6;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    height: 60px;
+    background-color: $gray-1;
+  }
+}
